@@ -16,7 +16,7 @@
     --border: #e7e5e4;
     --border-dark: #292524;
     --font-en: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-ar: 'Noto Sans Arabic', sans-serif;
+    --font-ar: 'Cairo', sans-serif;
     --radius-sm: 8px;
     --radius: 12px;
     --radius-lg: 20px;
@@ -47,7 +47,35 @@ body {
     overflow-x: hidden;
 }
 
-[dir="rtl"] body { font-family: var(--font-ar); }
+[dir="rtl"] body {
+    font-family: var(--font-ar);
+    line-height: 1.8;
+    word-spacing: 0.02em;
+}
+
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3 {
+    line-height: 1.4;
+    letter-spacing: 0;
+}
+
+[dir="rtl"] .hero-name h1 {
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+[dir="rtl"] .section-label {
+    letter-spacing: 0.05em;
+}
+
+[dir="rtl"] .btn {
+    font-family: var(--font-ar);
+    font-weight: 700;
+}
+
+[dir="rtl"] .credential-label,
+[dir="rtl"] .contact-label {
+    letter-spacing: 0.02em;
+}
 
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
