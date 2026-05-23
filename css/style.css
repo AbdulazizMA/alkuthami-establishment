@@ -731,6 +731,10 @@ a.contact-link:hover strong {
         font-size: 0.98rem;
     }
 
+    .hero-panel {
+        display: none;
+    }
+
     .hero-actions,
     .certificate-actions {
         display: grid;
